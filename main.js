@@ -1,16 +1,12 @@
 const LinksSocialMedia = {
   github: 'AndersonTatsuno',
-  youtube: 'jakelinygracielly',
-  facebook: 'maykbrito',
-  instagram: 'jakeliny.gracielly',
-  twitter: 'jakelinytec'
+  youtube: 'AndersonTatsuno',
+  facebook: 'AndersonTatsuno',
+  instagram: 'AndersonTatsuno',
+  twitter: 'AndersonTatsuno'
 }
 
 function changeSocialMediaLinks() {
-  //document.getElementById('userName').textContent = 'Olivia'
-  // simplificando a linha acima
-  // userName.textContent = 'Marcelo'
-
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
 
