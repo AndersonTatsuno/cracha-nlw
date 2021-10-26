@@ -1,0 +1,98 @@
+/* seletor { propriedade: valor }*/
+/* separando seletores por vírgula, insere os valores para todos eles */
+
+/* seletor universal */
+* {
+  margin: 0;
+}
+
+html,
+body {
+  /* --gray: variável */
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+
+  height: 100%; /* altura de 100% da página */
+  font-style: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid; /* visualização dos elementos*/
+  place-items: center; /*deixam os itens centralizados */
+}
+
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  /* ele que determina o limite para o absolute dentro do span */
+  position: relative;
+}
+
+.avatar span {
+  /* posiciona a foto por cima */
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+/* a '>' pega o primeiro nível da tag img */
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  /* faz com q a imagem se adapte dentro das dimensões descritas acima/ cover= cobre todo o espaço que tem ali */
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  /* deixa os elementos de forma horizontal */
+  display: flex;
+  /* espaço entre os elementos */
+  gap: 0.5rem;
+  /* alinha o display */
+  justify-content: center;
+}
