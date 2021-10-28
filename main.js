@@ -1,9 +1,9 @@
 const LinksSocialMedia = {
   github: 'AndersonTatsuno',
-  youtube: 'AndersonTatsuno',
-  facebook: 'AndersonTatsuno',
-  instagram: 'AndersonTatsuno',
-  twitter: 'AndersonTatsuno'
+  youtube: ' ',
+  facebook: ' ',
+  instagram: ' ',
+  twitter: ' '
 }
 
 function changeSocialMediaLinks() {
